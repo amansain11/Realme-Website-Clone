@@ -1,0 +1,71 @@
+:root{
+    --clr-orange: #ff762d;;
+    --clr-orangehover: #e46c2c;;
+    --clr-darkbackground: #222222;
+    --clr-graybackground: #f9f9f9;
+    --clr-lightgrayfont: #ababab;
+    --clr-darkgrayfont: #333333;
+    --clr-socialbackground: #323232;
+    --clr-socialcolor: #bdbdbd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Poppins", serif;
+    position: relative;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* xs */
+/* @media (min-width: 320px){
+
+} */
+
+/* sm */
+/* @media (min-width: 425px){
+} */
+
+
+/* md */
+/* @media (min-width: 625px){
+} */
+
+/* lg */
+/* @media (min-width: 824px){
+} */
+
+/* xl */
+/* @media (min-width: 1024px){
+} */
+
+/* 2xl */
+/* @media (min-width: 1425px){
+} */

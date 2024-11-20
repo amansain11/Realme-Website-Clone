@@ -1,0 +1,284 @@
+header{
+    z-index: 50000;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(0px);
+    color: white;
+    padding: .5em 1em;
+    animation: changeOpacity 0.25s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    transition: all .4s ease-in-out;
+}
+
+@keyframes changeOpacity{
+    to{
+        background: rgba(0,0,0,1);
+        backdrop-filter: blur(15px);
+    }
+}
+
+#realme-logo{
+    width: 70px;
+    /* height: 50px; */
+    cursor: pointer;
+}
+
+#realme-logo:hover svg path{
+    fill: #d4d4d4;
+}
+
+#realme-logo svg{
+    display: inline-block;
+}
+
+nav{
+    font-size: small;
+}
+
+.mobile-nav ul{
+    display: flex;
+    gap: 12px;
+}
+
+.mobile-nav ul li{
+    list-style: none;
+}
+
+.mobile-nav li svg{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.desktop-nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    flex: 1;
+}
+
+.desktop-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.desktop-nav ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.desktop-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-nav ul li:hover a{
+    color: #d4d4d4;
+}
+
+.desktop-nav ul li:hover{
+    list-style: none;
+    cursor: pointer;
+}
+
+.desktop-nav ul li img{
+    width: 28px;
+}
+
+#community, #support, #brand{
+    display: none;
+}
+
+#search-bar{
+    display: flex;
+    border-radius: 25px;
+}
+
+#search-bar input{
+    width: 120px;
+    /* height: 5px; */
+    display: none;
+    background: none;
+    border: 0;
+    outline: 0;
+}
+
+#search-bar input::placeholder{
+    opacity: .6;
+    color: var(--clr-lightgrayfont);
+    font-size: smaller;
+}
+
+#search-bar input{
+    caret-color: white;
+}
+
+#search-bar input:focus{
+    color: white;
+}
+
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ of input from Chrome and Internet explorer*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+#search-logo svg{
+    width: 20px;
+    height: 20px;
+}
+
+#realmeow{
+    position: relative;
+}
+
+#realmeow:hover::after{
+    width: 139%;
+    height: 140%;
+    top: -5px;
+    left: -5px;
+}
+
+#realmeow::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 68, 68, .85);;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    transition: all .4s ease-in-out;
+}
+
+#left-nav{
+    font-weight: 600;
+}
+
+#left-nav li{
+    position: relative;
+}
+
+#left-nav li:hover a::after{
+    width: 100%;
+    border: 1px solid white;
+}
+
+#left-nav li a::after{
+    display: block;
+    width: 0;
+    content: '';
+    border: 0px solid white;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    bottom: -21px;
+}
+
+#left-nav :nth-child(2) a{
+    color: var(--clr-orange);
+}
+
+#left-nav :nth-child(2):hover a{
+    color: var(--clr-orangehover);
+}
+
+/* sm */
+/* @media (min-width: 320px){
+
+} */
+
+/* md */
+@media (min-width: 425px){
+    header{
+        padding: .8em 1em;
+    }
+    
+    #realme-logo{
+        width: 91px;
+    }
+    
+    .mobile-nav ul{
+        gap: 18px;
+    }
+    
+    .mobile-nav li svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* lg */
+@media (min-width: 625px){
+    header{
+        padding: 1em 1.5em;
+    }
+    
+    #realme-logo{
+        width: 157px;
+    }
+    
+    .mobile-nav ul{
+        gap: 18px;
+    }
+    
+    .mobile-nav li svg{
+        width: 51px;
+        height: 51px;
+    }
+}
+
+/* lg */
+@media (min-width: 824px){
+    .mobile-nav{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+    }
+    #realme-logo{
+        width: 80px;
+        /* height: 50px; */
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    #search-bar{
+        padding: 5px 12px;
+        background: rgba(68, 68, 68, .5)
+    }
+    #search-bar input{
+        display: block;
+    }
+    #search-logo svg{
+        width: 17px;
+        height: 17px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1425px){
+    header{
+        padding: 1em 7.5em;
+    }
+    #community, #support, #brand{
+        display: block;
+    }
+}

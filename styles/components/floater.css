@@ -1,0 +1,268 @@
+.floating-box-container{
+    position: absolute;
+    z-index: 500;
+    color: white;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    /* margin: 0 auto; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.floating-box{
+    /* background-color: royalblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 22px;
+    /* align-items: flex-start; */
+}
+
+.floating-box .title{
+    width: 215px;
+}
+
+.subtitle{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+.description{
+    line-height: normal;
+    width: 27ch;
+    font-size: 10px;
+    font-weight: 450;
+}
+
+.section-button-box{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    /* width: 100%; */
+}
+
+.section-button-box :first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+.section-btn{
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    padding: .8em 1em;
+    width: 80px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.learn-more-btn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.learn-more-btn:hover{
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+/* xs */
+@media (min-width: 320px){
+    .floating-box-container{
+        top: 12.5vh;
+    }
+    .floating-box{
+        margin-left: 27px;
+    }
+    .floating-box .title{
+        width: 264px;
+    }
+    .subtitle{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .description{
+        font-size: 12.5px;
+        font-weight: 400;
+    }
+    .section-button-box{
+        margin-top: 50px;
+    }
+    .section-btn{
+        width: 98px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 290px;
+    }
+}
+
+/* sm */
+@media (min-width: 425px){
+    .floating-box-container{
+        top: 14vh;
+    }
+    .floating-box{
+        margin-left: 30px;
+    }
+    .floating-box .title{
+        width: 300px;
+    }
+    .subtitle{
+        font-size: 19px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .section-button-box{
+        margin-top: 53px;
+    }
+    .section-btn{
+        width: 112px;
+        font-size: 12px;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 380px;
+    }
+}
+
+
+/* md */
+@media (min-width: 625px){
+    .floating-box-container{
+        top: 20vh;
+    }
+    .floating-box{
+        margin-left: 42px;
+    }
+    .floating-box .title{
+        width: 431px;
+    }
+    .subtitle{
+        font-size: 27px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+    .description{
+        font-size: 20px;
+    }
+    .section-button-box{
+        margin-top: 78px;
+        gap: 18px;
+    }
+    .section-btn{
+        width: 160px;
+        font-size: 16.5px;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 535px;
+    }
+}
+
+/* lg */
+@media (min-width: 824px){
+    .floating-box-container{
+        top: 14vh;
+    }
+    .floating-box{
+        margin-left: 45px;
+    }
+    .floating-box .title{
+        width: 300px;
+    }
+    .subtitle{
+        font-size: 19px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    .section-button-box{
+        margin-top: 53px;
+    }
+    .section-btn{
+        width: 112px;
+        font-size: 12px;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 380px;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .floating-box-container{
+        top: 18vh;
+    }
+    .floating-box{
+        margin-left: 55px;
+    }
+    .floating-box .title{
+        width: 425px;
+    }
+    .subtitle{
+        font-size: 23px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+    .description{
+        font-size: 13px;
+    }
+    .section-button-box{
+        margin-top: 100px;
+        gap: 18px;
+    }
+    .section-btn{
+        width: 150px;
+        font-size: 15px;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 535px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1425px){
+    .floating-box-container{
+        top: 14vh;
+    }
+    .floating-box{
+        margin-left: 170px;
+    }
+    .floating-box .title{
+        width: 425px;
+    }
+    .subtitle{
+        font-size: 23px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+    .description{
+        font-size: 13px;
+    }
+    .section-button-box{
+        margin-top: 150px;
+        gap: 18px;
+    }
+    .section-btn{
+        width: 150px;
+        font-size: 15px;
+    }
+    .second-section .floating-box-container .floating-box svg{
+        width: 535px;
+    }
+}

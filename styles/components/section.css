@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.section {
+    position: relative;
+    background-color: royalblue;
+    width: 100vw;
+    height: 530px;
+    cursor: pointer;
+}
+
+.first-section{
+    background-color: black;
+}
+
+.first-section video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#realme-back-video-horizontal {
+    display: none;
+}
+
+.second-section {
+    background: url('/public/realme-turbo-small.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third-section{
+    background: url('/public/realme-gt6-small.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fourth-section{
+    background: url('/public/realme-speed-small.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* xs */
+@media (min-width: 320px){
+    .section {
+        height: 590px;
+    }
+}
+
+/* sm */
+@media (min-width: 425px){
+    .section {
+        height: 750px;
+    }
+}
+
+@media (min-width: 525px){
+    .section {
+        height: 910px;
+    }
+}
+
+/* md */
+@media (min-width: 625px){
+    .section {
+        height: 1250px;
+    }
+}
+
+/* lg */
+@media (min-width: 824px) {
+    #realme-back-video {
+        display: none;
+    }
+
+    #realme-back-video-horizontal {
+        display: block;
+    }
+
+    .section {
+        height: 400px;
+    }
+
+    .second-section {
+        background: url('/public/realme-turbo-medium.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .third-section{
+        background: url('/public/realme-gt6-medium.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .fourth-section{
+        background: url('/public/realme-speed-medium.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* xl */
+@media (min-width: 1024px){
+    .section {
+        height: 640px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1425px){
+    .second-section {
+        background: url('/public/realme-turbo-large.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .third-section{
+        background: url('/public/realme-gt6-large.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .fourth-section{
+        background: url('/public/realme-speed-large.webp');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
